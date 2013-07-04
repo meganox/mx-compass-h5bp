@@ -1,0 +1,105 @@
+/*
+ * H5BP Base styles
+ */
+
+// ==========================================================================
+// Base styles: opinionated defaults
+// ==========================================================================
+
+$h5bp-text-color: #222 !default;
+$h5bp-font-size: 1em !default;
+$h5bp-line-height: 1.4 !default;
+$h5bp-set-font-size: true  !default;
+$h5bp-selection-background: #b3d4fc !default;
+$h5bp-hr-color: #ccc !default;
+$h5bp-chromeframe-background: #ccc !default;
+$h5bp-chromeframe-color: #000 !default;
+$h5bp-chromeframe-margin: 0.2em 0 !default;
+$h5bp-chromeframe-padding: 0.2em 0 !default;
+
+html,
+button,
+input,
+select,
+textarea {
+    color: $h5bp-text-color;
+}
+
+@if $h5bp-set-font-size {
+  body {
+      font-size: $h5bp-font-size;
+      line-height: $h5bp-line-height;
+  }
+}
+
+//
+// Remove text-shadow in selection highlight: h5bp.com/i
+// These selection rule sets have to be separate.
+// Customize the background color to match your design.
+//
+
+::-moz-selection {
+    background: $h5bp-selection-background;
+    text-shadow: none;
+}
+
+::selection {
+    background: $h5bp-selection-background;
+    text-shadow: none;
+}
+
+//
+// A better looking default horizontal rule
+//
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid $h5bp-hr-color;
+    margin: 1em 0;
+    padding: 0;
+}
+
+//
+// Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+//
+
+img {
+    vertical-align: middle;
+}
+
+//
+// Remove default fieldset styles.
+//
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+//
+// Allow only vertical resizing of textareas.
+//
+
+textarea {
+    resize: vertical;
+}
+
+
+// ==========================================================================
+// Chrome Frame prompt
+// ==========================================================================
+
+@mixin h5bp-chrome($classname: chromeframe) {
+
+  .#{$classname} {
+      margin: $h5bp-chromeframe-margin;
+      background: $h5bp-chromeframe-background;
+      color: $h5bp-chromeframe-color;
+      padding: $h5bp-chromeframe-padding;
+  }
+
+}
+

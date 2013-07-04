@@ -1,0 +1,65 @@
+//
+// HTML5 Boilerplate
+//
+// What follows is the result of much research on cross-browser styling.
+// Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+// Kroc Camen, and the H5BP dev community and team.
+// 
+// Scss conversion by @JerryStillman
+//
+// To use these styles as the H5BP team intended, this file should form the
+// basis of your main stylesheet, with your primary site styles going in the
+// file `_primary.scss`. The default settings will then produce css equivalent
+// to the raw h5bp css.
+//
+
+// Set to false to disable the creation of html classes. Use @extend instead.
+// All h5bp `placeholder` class names have `h5bp-` prepended when extending.
+// E.g. @extend %h5bp-hidden;
+$h5bp-use-html-classes: true !default;
+
+// Support for Compass cross-browser support variables.
+//     http://compass-style.org/reference/compass/support/
+// These are not implemented for normalize.css as compass-normalize plugin is
+// better suited for that.
+//$legacy-support-for-ie6: true !default;
+//$legacy-support-for-ie7: true !default;
+
+// You can change H5BP's `opinionated defaults` here.
+$h5bp-text-color: #222 !default;
+$h5bp-font-size: 1em !default;
+$h5bp-line-height: 1.4 !default;
+// Set to false to disable setting font size on the body element
+$h5bp-set-font-size: true !default;
+$h5bp-selection-background: #b3d4fc !default;
+$h5bp-hr-color: #ccc !default;
+$h5bp-chromeframe-background: #ccc !default;
+$h5bp-chromeframe-color: #000 !default;
+$h5bp-chromeframe-margin: 0.2em 0 !default;
+$h5bp-chromeframe-padding: 0.2em 0 !default;
+
+
+// H5BP's version of normalize.css, based on version 1.1.1
+@import 'mx-compass-h5bp/normalize';
+
+// H5BP's `opinionated defaults`
+@import 'mx-compass-h5bp/base';
+// Comment out to use your own styling for the chromeframe, or you can
+// change the class name.
+@include h5bp-chrome('mychromeframe');
+
+
+// Add your own styles in here.
+@import 'primary';
+
+// EXAMPLE media queries.
+@import 'media';
+
+
+// Helper classes, these respect the $use-html-classes and
+// $legacy-support variables.
+@import 'mx-compass-h5bp/helpers';
+
+// Print stylesheet, inlined to prevent an http request.
+@import 'mx-compass-h5bp/print';
+
