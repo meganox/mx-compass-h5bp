@@ -23,8 +23,8 @@ Usage
 
 ### Default H5BP
 
-`@import 'mx-compass-h5bp-top/'` at the top of your stylesheet and
-`@import 'mx-compass-h5bp-bottom/'` at the bottom. `@include 'h5bp-chrome'`
+`@import 'mx-compass-h5bp-top'` at the top of your stylesheet and
+`@import 'mx-compass-h5bp-bottom'` at the bottom. `@include 'h5bp-chrome'`
 somewhere in your stylesheet. Alternately,
 
 ```scss
