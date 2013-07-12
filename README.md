@@ -52,9 +52,8 @@ $legacy-support-for-ie6: true !default;
 $legacy-support-for-ie7: true !default;
 ```
 
-These are the Compass defaults, the module doesn't set them (in case they
-change in future Compass versions).  They have no effect in the normalize
-section. I recommend using the compass-normalize plugin instead (I do).
+They have no effect in the normalize section. I recommend using the
+compass-normalize plugin instead (I do).
 
 The helpers section is output as Sass pseudo-classes e.g. `%h5bp-invisible` for
 use with `@extend` and as HTML classes e.g. `.invisible`. Note that the
